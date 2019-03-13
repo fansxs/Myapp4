@@ -42,9 +42,9 @@ public class MainActivity extends BaseActivity {
                 Toast.makeText(this,"中国电信", Toast.LENGTH_SHORT).show();
             }
         }
+    }
 
-
-
-
+    public void Hasee() {
+        Toast.makeText(this,"Hasee", Toast.LENGTH_SHORT).show();
     }
 }
