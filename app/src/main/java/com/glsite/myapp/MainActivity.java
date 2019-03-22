@@ -27,6 +27,7 @@ public class MainActivity extends BaseActivity {
         //        android.os.Process.killProcess(android.os.Process.myPid());
         //        System.exit(0);
 
+        System.out.println(Calc.sub(20, 10));
 
         TelephonyManager telManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         String operator = telManager.getSimOperator();
