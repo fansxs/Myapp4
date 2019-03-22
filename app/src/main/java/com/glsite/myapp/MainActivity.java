@@ -27,25 +27,26 @@ public class MainActivity extends BaseActivity {
         //        android.os.Process.killProcess(android.os.Process.myPid());
         //        System.exit(0);
 
-        System.out.println(Calc.add(10, 20));
+        System.out.println(Calc.sub(20, 10));
+        System.out.println(Calc.mul(10, 30));
 
         TelephonyManager telManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         String operator = telManager.getSimOperator();
-        if (operator != null) {
-            if (operator.equals("46000") || operator.equals("46002")) {
+        if(operator!=null){
+            if(operator.equals("46000") || operator.equals("46002")){
                 //中国移动
-                Toast.makeText(this, "中国移动", Toast.LENGTH_SHORT).show();
-            } else if (operator.equals("46001")) {
+                Toast.makeText(this,"中国移动", Toast.LENGTH_SHORT).show();
+            }else if(operator.equals("46001")){
                 //中国联通
-                Toast.makeText(this, "中国联通", Toast.LENGTH_SHORT).show();
-            } else if (operator.equals("46003")) {
+                Toast.makeText(this,"中国联通", Toast.LENGTH_SHORT).show();
+            }else if(operator.equals("46003")){
                 //中国电信
-                Toast.makeText(this, "中国电信", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"中国电信", Toast.LENGTH_SHORT).show();
             }
         }
     }
 
     public void Hasee() {
-        Toast.makeText(this, "Hasee", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Hasee", Toast.LENGTH_SHORT).show();
     }
 }
