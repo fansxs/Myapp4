@@ -28,6 +28,7 @@ public class MainActivity extends BaseActivity {
         //        System.exit(0);
 
         System.out.println(Calc.sub(20, 10));
+        System.out.println(Calc.mul(10, 30));
 
         TelephonyManager telManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         String operator = telManager.getSimOperator();
